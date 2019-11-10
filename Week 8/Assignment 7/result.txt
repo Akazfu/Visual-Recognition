@@ -1,0 +1,5 @@
+Student Name= Ziming Fu, Student id: 1370023
+question 1:	entropy=6.661957740783691	max_prob=0.8032339215278625	score=1.0
+question 2:	psnr=33.30639898777008		label=0		score=1.0
+total_score=1.0
+assignment_coding_score=75.00, out of 75.00

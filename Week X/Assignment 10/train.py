@@ -106,7 +106,6 @@ if __name__=="__main__":
     
     device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
     
-    # model=EfficientNet.from_pretrained( "efficientnet-b0", num_classes=28).to(device)
     model=DenseNet(growth_rate=32, block_config=(3, 6, 9, 12),
                  num_init_features=64, bn_size=4, drop_rate=0.0, num_classes=28,in_channels=3).to(device)
     optimizer=optim.Adam(list(filter(lambda p: p.requires_grad, model.parameters())),lr=0.001,weight_decay=1e-4)

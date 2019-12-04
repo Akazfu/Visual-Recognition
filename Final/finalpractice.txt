@@ -1,5 +1,15 @@
+Q1-Q5:
+Paper
+
+Q6-Q7: 
+Colab
+
+Q8:
+min:0 max:inf
+
 Q9:
-pixel intensity 1. simply & perform better 2. find solution not exist 3. Adapt to new data
+pixel intensity 
+1. simply & perform better 2. find solution not exist 3. Adapt to new data
 
 Q10:
 knn - non-parameterized
@@ -7,13 +17,17 @@ KNN is a non-parametric, lazy learning algorithm. Its purpose is to use a databa
 are separated into several classes to predict the classification of a new sample point.
 
 Q11:
+bias variance trade-off
 Underfitting:bias  not complex enough
 Overfitting:variance  too complex
 
-Q12 Q13:
-To fix, Under: reduce weight decay or keep trainning etc. Over: DropOut Regualization Early Stop etc.
+Q12-Q13:
+To fix, Under: reduce weight decay or keep trainning etc. 
+        Over: DropOut Regualization Early Stop etc.
 
 Q15:
+The main reason why gradient descent is used for linear regression is the computational 
+complexity: it's computationally cheaper (faster) to find the solution using the gradient descent in some cases.
 using an iterative method is much more computationally efficient than using the closed form solution 
 to the least squares problem        Matrix Inversion
 
@@ -22,6 +36,9 @@ preserve spatial structure; less computations, weight sharing
 
 Q17:
 parameter sharing we use fixed size of filter (parameters)
+The essential difference is that in an equivalent fully connected layer, evey neuron is connected to 
+every other neuron whereas in the convolution layer neurons are connected to the local region in 
+the input. This results in a higher no. of parameters as there are more connections in the first case than second.
 
 Q18:
 Spatially: Pooling; depth: change conv layersize(filter size?) 1*1 conv
@@ -31,10 +48,22 @@ new_height = (input_height - filter_height + 2 * P)/S + 1
 new_width = (input_width - filter_width + 2 * P)/S + 1
 A conv layer with 2x2xdxd stride size 2
 
+Q20:
+26 x 26 x 4
+
+Q21-Q22:
+0; 0
+
+Q23:
+5x5x10x5+5
+
+Q24:
+eclass
+
 Q25: residual connection go deeper help with vanishing gradient problem
 
 Q26:
-DenseNet needs more memory
+DenseNet needs more memory Image.
 
 Q30:
 The role of a region proposal net in an object detector is as follows :-
@@ -88,6 +117,7 @@ random things. It includes generating music or fake human faces as well. Thus as
  can generate different things thus it is called the generative model.
 
 Q38: 
+https://medium.com/@jonathan_hui/gan-why-it-is-so-hard-to-train-generative-advisory-networks-819a86b3750b
 This includes generators and discriminators. The generator keeps on finding and 
 generating the signals and discriminator keeps on finding whether the signal is real 
 or fake and thus after so iterations, discriminator won't be able to find the 

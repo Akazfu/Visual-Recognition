@@ -1,0 +1,142 @@
+Q9:
+pixel intensity 1. simply & perform better 2. find solution not exist 3. Adapt to new data
+
+Q10:
+knn - non-parameterized
+KNN is a non-parametric, lazy learning algorithm. Its purpose is to use a database in which the data points 
+are separated into several classes to predict the classification of a new sample point.
+
+Q11:
+Underfitting:bias  not complex enough
+Overfitting:variance  too complex
+
+Q12 Q13:
+To fix, Under: reduce weight decay or keep trainning etc. Over: DropOut Regualization Early Stop etc.
+
+Q15:
+using an iterative method is much more computationally efficient than using the closed form solution 
+to the least squares problem        Matrix Inversion
+
+Q16:
+preserve spatial structure; less computations, weight sharing
+
+Q17:
+parameter sharing we use fixed size of filter (parameters)
+
+Q18:
+Spatially: Pooling; depth: change conv layersize(filter size?) 1*1 conv
+
+Q19:
+new_height = (input_height - filter_height + 2 * P)/S + 1
+new_width = (input_width - filter_width + 2 * P)/S + 1
+A conv layer with 2x2xdxd stride size 2
+
+Q25: residual connection go deeper help with vanishing gradient problem
+
+Q26:
+DenseNet needs more memory
+
+Q30:
+The role of a region proposal net in an object detector is as follows :-
+1)One main reason is automatic tagging is posible.
+2)High quality region proposals are used by Fast R-CNN for detection.
+3)The Region Proposal Network outputs the objectness score thatindicates whether the piece of image 
+contains a background or is just a foreground object.
+2-stage methods separate the object detection task into proposal and classification
+
+Q31:
+We need a fully convolutional neural network for semantic segmentation task because :-
+1) It can efficiently learn to make dense predictions for per-pixel tasks like semantic segmentation.
+2)It exceeds the most recent stage in the development of a product, incorporating the 
+newest ideas and features without further machinery.
+
+Q32:
+As opposed to a convolutional neural net designed for image classification, 
+you apply a fully convolutional net for semantic segmentation because of
+1)Fine tuning
+2)Dense prediction with convnets
+
+Q33:
+A transposed convolution plays the following role in semantic segmentation :-
+1)Output image dimension is not dependent on the kernel size of the filter but increases 
+by the number of times of mentioned   stride if transposed convolution is used.
+2)In transpose convolution filter kernel doesn’t goes out of the input image dimensions
+if it is in Valid padding.
+Upsampling
+
+Q34:
+A skip connection in semantic segmentation does the following :-
+1)We can recover more fine-grain detail with the addition of the skip connections.
+2)They compensate the loss caused by downsampling.
+
+Q35: 
+In the case of autoencoder, there is just the input to the algorithm or the model, it 
+tries to mimic the output as the input which is given to it. Thus we are not 
+providing any output for each input and it is setting the target value as its input, 
+thus it is an unsupervised learning algorithm.
+
+Q36: 
+The autoencoder tries to implement an identity function as the output of the 
+encoder is the same as the input of the encoder, just that there are hidden layers 
+present in the model which are getting trained to copy the output the same as that 
+of the input. Thus as the output and input of the model are same thus the autoencoder 
+tries to implement the identity function.
+
+Q37: 
+The variational autoencoder is termed as the generative model because it can generate 
+random things. It includes generating music or fake human faces as well. Thus as the model
+ can generate different things thus it is called the generative model.
+
+Q38: 
+This includes generators and discriminators. The generator keeps on finding and 
+generating the signals and discriminator keeps on finding whether the signal is real 
+or fake and thus after so iterations, discriminator won't be able to find the 
+difference between the real and fake signals. Thus we can use a generator to create 
+new realistic signals.
+minimax game game theory
+
+Q39:
+GAN's model is more powerful because Generative adversarial networks(GAN's) provide much 
+more robust results . The advantage of GANs at the moment is they are better at 
+generating visual features (which really boils down to adversarial loss is better than 
+mean-squared loss)
+
+Q40:
+Truncated Backpropagation Through Time (truncated BPTT) is a widespread method for 
+learning recurrent computational graphs. Truncated BPTT keeps the computational benefits 
+of Backpropagation Through Time (BPTT) while relieving the need for a complete backtrack
+ through the whole data sequence at every step. However, truncation favors short-term
+  dependencies: the gradient estimate of truncated BPTT is biased, so that it does 
+  not benefit from the convergence guarantees from stochastic gradient theory.
+
+Q41:
+The staple technique for training feedforward neural networks is to back propagate error and update the network weights.
+Backpropagation breaks down in a recurrent neural network, because of the recurrent or loop connections.
+This was addressed with a modification of the Backpropagation technique called Backpropagation Through Time or BPTT.
+Instead of performing backpropagation on the recurrent network as stated, the structure of the network is unrolled, where 
+copies of the neurons that have recurrent connections are created. For example a single 
+neuron with a connection to itself (A->A) could be represented as two neurons with the same weight values (A->B).
+This allows the cyclic graph of a recurrent neural network to be turned into an acyclic 
+graph like a classic feed-forward neural network, and Backpropagation can be applied.
+
+Q42:
+When Backpropagation is used in very deep neural networks and in unrolled recurrent neural networks, 
+the gradients that are calculated in order to update the weights can become unstable.
+They can become very large numbers called exploding gradients or very small numbers 
+called the vanishing gradient problem. These large numbers in turn are used to update the weights in the network, making training unstable and the network unreliable.
+This problem is alleviated in deep multilayer Perceptron networks through the use of 
+the Rectifier transfer function, and even more exotic but now less popular approaches of using unsupervised pre-training of layers.
+
+In recurrent neural network architectures, this problem has been alleviated using a new 
+type of architecture called the Long Short-Term Memory Networks that allows deep recurrent networks to be trained.
+
+Q43:
+In order to generate caption for an image, Convolutional Neural Network (CNN) is used along with Recurrent Neural Network (RNN). In order to do so, 
+feed the image into a Convolutional Neural Network (CNN) for encoding, and run this encoding into a decoder 
+Recurrent Neural Network (RNN) to generate a caption for an image.
+
+Q44:
+Student learn from teacher(trained model) NN have redundances.
+
+Q45:
+https://math.stackexchange.com/questions/261956/bilinear-map-and-differentiability

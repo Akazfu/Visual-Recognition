@@ -9,6 +9,4 @@ Initialization of parameters
 Various activation functions
 Batch normalization
 Dropout
-In-class quiz 5
-Lab 5:
 Resource: http://cs231n.stanford.edu/syllabus.html

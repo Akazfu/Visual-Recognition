@@ -2,5 +2,3 @@ Week 10 (November 6)
 Recurrent neural networks: http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture10.pdf
 Image captioning - basic version: https://medium.com/@stepanulyanin/captioning-images-with-pytorch-bc592e5fd1a3
 Image captioning with visual attention model: https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
-In-class quiz 9
-Lab 9:

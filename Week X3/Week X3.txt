@@ -1,4 +1,2 @@
 Image registration with deep learning: https://github.com/learn2reg/tutorials2019
 Final exam review
-In-class quiz 11
-No lab

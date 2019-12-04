@@ -2,5 +2,3 @@ Week 7 (October 16)
 Object detection with CNN: http://cs231n.stanford.edu/slides/2016/winter1516_lecture8.pdf
 YOLO object detector: https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/
 Domain adaptation: http://sites.skoltech.ru/compvision/projects/grl/
-In-class quiz 6
-Lab 6:

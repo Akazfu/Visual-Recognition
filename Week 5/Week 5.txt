@@ -3,5 +3,3 @@ Introduction to convolutional neural networks: http://cs231n.stanford.edu/
 Explanation of convolution by small numerical examples
 Explanation of convolution as a matrix-vector multiplication (aka linear operation) by numerical examples
 LeNet in PyTorch
-In-class quiz 4
-Lab 4:
